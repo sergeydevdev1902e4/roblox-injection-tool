@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+.vscode/
+.idea/
+
+# Local test dumps and scratch files
+*.tmp.rbxlx
+*.tmp.rbxmx
+scratch_*.rbxlx
+test_out/

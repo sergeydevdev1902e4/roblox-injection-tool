@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roblox-injector"
+version = "0.2.1"
+description = "Inject Luau bundles and test harnesses into rbxlx/rbxmx files without Studio"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Dan K.", email = "dan@localghost.dev" }
+]
+dependencies = [
+    "lxml>=5.0.0",
+    "click>=8.1.3",
+    "pydantic>=2.4.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+rbx-inject = "roblox_injector.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "ruff>=0.1.0",
+    "mypy>=1.6.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
