@@ -72,4 +72,4 @@ rbx-inject batch --input place.rbxlx --manifest inject.json --output place.ci.rb
 
 Target paths create missing `Folder` instances automatically if they don't exist yet.
 
-<!-- checked: 2026-09-17 -->
+<!-- checked: 2026-09-18 -->
